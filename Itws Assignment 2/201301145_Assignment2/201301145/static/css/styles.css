@@ -1,0 +1,105 @@
+   body
+      {
+       background: url('../Images/background');
+       repeat-x;
+      }
+   img.logo 
+           {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+   ul.navbar
+           {
+	   list-style-type:none;
+           margin:0;
+           padding:0;
+           overflow:hidden;
+           position:relative;
+           left:300px;
+            }
+   ul.navbar li
+              {
+               float:left;
+               }
+   a:link,a:visited
+                   {
+                    display:block;
+                    width:120px;
+                    font-weight:bold;
+                    color:#FFFFFF;
+                    background-color:#B20000;
+                    text-align:center;
+                    padding:10px;
+	            text-decoration:none;
+	            text-transform:uppercase;
+                    }
+    .colorDissolve 
+                  {
+                   position: relative;
+                   overflow: hidden;
+                   left:180px;
+                   width: 1000px;
+                   height: 358px;
+                   margin:50px auto=0;
+                   position=relative;
+                   background: #B8B8B8 ;
+                   }
+     .colorDissolve .item 
+                   {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                   -webkit-animation: colorDissolve 20s linear infinite;
+                   -moz-animation: colorDissolve 20s linear infinite;
+                   -ms-animation: colorDissolve 20s linear infinite;
+                    animation: colorDissolve 20s linear infinite;
+                    }
+     .colorDissolve .item:nth-child(2) 
+                                     {
+                                      -webkit-animation-delay: 5s;
+                                      -moz-animation-delay: 5s;
+                                      -ms-animation-delay: 5s;
+                                       animation-delay: 5s;
+                                     }
+      .colorDissolve .item:nth-child(3) 
+                                      {
+                                       -webkit-animation-delay: 10s;
+                                       -moz-animation-delay: 10s;
+                                       -ms-animation-delay: 10s;
+                                        animation-delay: 10s;
+                                      }
+     .colorDissolve .item:nth-child(4) 
+                                      {
+                                       -webkit-animation-delay: 15s;
+                                       -moz-animation-delay: 15s;
+                                       -ms-animation-delay: 15s;
+                                        animation-delay: 15s;
+                                      }
+     @-webkit-keyframes colorDissolve 
+                                     {
+                                      0%, 25%, 100% { opacity: 0; }
+                                      4.17%, 20.84% { opacity: 1;}
+                                     }
+     @-moz-keyframes colorDissolve 
+                                     {
+                                      0%, 25%, 100% { opacity: 0; }
+                                      4.17%, 20.84% { opacity: 1;}
+                                     }
+     @-ms-keyframes colorDissolve 
+                                     {
+                                      0%, 25%, 100% { opacity: 0; }
+                                      4.17%, 20.84% { opacity: 1;}
+                                     }
+     @keyframes colorDissolve 
+                                     {
+                                      0%, 25%, 100% { opacity: 0; }
+                                      4.17%, 20.84% { opacity: 1;}
+                                     }
+     #form
+          {
+	   position:absolute;
+	   margin-left:400px;
+	   top:181px;
+          }

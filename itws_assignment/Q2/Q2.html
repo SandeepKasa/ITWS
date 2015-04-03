@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+			$("button").click(
+				function(){
+				var x=$("#input").val()
+				$("ul").append("<li>"+x+"</li>")})})
+
+        </script>
+
+</head>
+
+<body>
+
+<textarea id="input"> enter text...</textarea>
+<button>ADD</button>
+<ul></ul>
+</body>
+</html>
+

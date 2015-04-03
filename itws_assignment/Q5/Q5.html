@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>Window locations</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+function change()
+{
+	var x;
+	x=Math.floor(Math.random()*500+1);
+	return x;
+}
+function openWin()
+{
+var win1=window.open("https://www.facebook.com/","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=20, left=20, width=200, height=100");
+var win2=window.open("http://www.google.co.in","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=20, width=200, height=100");
+var win3=window.open("https://www.gmail.com/","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=1500, width=200, height=100");
+var win4=window.open("http://www.yahoo.com","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=20,left=1500, width=200, height=100");
+var win5=window.open("http://www.w3schools.com","_blank","top=700,left=900,width=200,height=200");
+var win6=window.open("http://www.w3schools.com","_blank",'toolbar=yes, scrollbars=yes, resizable=yes, top='+change()+',left='+change()+', width=200, height=100');
+$(window).unload(function(){
+		win1.close();
+ win2.close();
+		win3.close();
+win3.close();
+win4.close();
+win5.close();
+win6.close();
+		});
+};
+</script>
+</head>
+
+
+<body>
+<center><img src="./img.jpg" top:"40px" onclick="openWin()"></center>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q1</title>
+<link rel="stylesheet" href="./Q1.css">
+</head>
+<body>
+<script type="text/javascript" >
+var t= 2;
+var time= 0;
+setInterval(inc,30);
+function inc() {
+	time++;
+	if(time==60)
+	{
+	if (t<6) {
+	var myvar = setInterval(function(){showbiz(t++,myvar)},1000);
+	}
+	else {
+	clearInterval(myvar2);
+	document.getElementById("cool").src = "image1.jpg";
+}
+	time = 0;
+	}
+}
+function showbiz(t,myvar) {
+	document.getElementById("cool").src = "image" + t + ".jpg";
+	clearInterval(myvar);
+}
+function clickme(a)
+{
+t=1;
+document.getElementById("cool").src= a;
+}
+</script>
+<div id="heading">
+<p>Ravi</p>
+</div>
+<div id="big">
+<img src="img1.jpg" alt="img1" id="cool">
+</div>
+<div id="thumb">
+<ul id="thumbs">
+<li><img src="./img1.jpg" alt="img1_thumb" id="img1" onclick="clickme('img1.jpg');"></li>
+<li><img src="./img2.jpg" alt="img2_thumb" id="img2" onclick="clickme('img2.jpg');"></li>
+<li><img src="./img3.jpg" alt="img3_thumb" id="img3" onclick="clickme('img3.jpg');"></li>
+<li><img src="./img4.jpg" alt="img4_thumb" id="img4" onclick="clickme('img4.jpg');"></li>
+</ul>
+</div>
+</body>
+</html>

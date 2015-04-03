@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+ul {
+color: red;
+margin: 8px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+<input type="text" value="">
+<button type="button">click!</button>
+<ul>
+<li>start</li>
+</ul>
+<script>
+
+$(document).ready(function(){
+$("button").click(function(){
+			var value = $("input").val();
+	$("ul").append("<li>"+value+"</li>");
+			var value = $("input").val("");
+	$("li").click(function(){
+			$(this).hide("slow");});
+		  });
+});
+</script>
+</body>
+</html>

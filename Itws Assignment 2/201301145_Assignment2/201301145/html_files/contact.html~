@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+     <head>
+           <link rel="stylesheet" href="../static/css/styles.css">
+           <link rel="stylesheet" href="../static/css/contact.css">
+     </head>
+     <body>
+<!--NAVIGATION BAR-->
+           <img class="logo" src="../static/images/home_5.jpg">
+       <ul class="navbar">
+                        <img src="/home/user/Desktop/logo">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="careers.html">CAREERS</a></li>
+                        <li><a href="our team.html">OUR TEAM</a></li>
+                        <li><a href="catalogue.html">CATALOGUE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+     <li> </li>
+     <div >
+
+<!--CONTACT FORM USING DIV-->
+
+          <h2> Contact Form </h2>
+          <form name="input" method="post">
+                                          First name   : <input type="text"style="margin-left:0px;" name="FirstName" value="*First"><br>
+                                          Last name    : <input type="text"style="margin-left:2px;" name="LastName"  value="*Last"><br>
+                                          Email        : <input type="text"style="margin-left:38px;" name="Email" value="*Email"><br>
+                                          Phone No.    : <input type="text" name="Phone No." value="*Phone No."><br>
+                                          Subject      : <input type="text"style="margin-left:23px;" name="Subject"   value="*Subject"><br>
+                              <p>Message</p>
+                                           <textarea rows='5' cols='50' >
+                                           </textarea> 
+                                           <button type="button" onclick="alert('Your information is successfully recieved. Thankyou!!!')">Submit </button>
+          </form>
+    </div>
+
+<!--TABLE FOR OTHE CONTACT DETAILS IN DIV-->
+
+    <div id="form" style="margin-left:700px;" >
+                             <table border=1>
+                             <tr>
+                             <td><h3>Mailing Address</h3></td>
+                             <td>PEARL TC,
+                             Str Republicii nr 9, 5th floor
+                             300159, Timisoara, Romania, EU</td>
+                             </tr>
+                             <tr>
+                             <td><h3>Phone</h3></td>
+                             <td>0040-721-323759</td>
+                             </tr>
+                             <tr>
+                             <td><h3>Fax</h3></td>
+                             <td>0040-771-442717</td>
+                             </tr>
+                             <tr>
+                             <td><h3>Email</h3></td>
+                             <td>sandeep07.1819@gmail.com</td>
+                             </tr>
+                             <td><h3>Office Hours</h3></td>
+                             <td>Monday - Friday, 9am - 6pm 
+                             (GMT+2).</td> 
+                             </tr> 
+                             </table>
+                             </div>
+                             <li> </li>
+
+<!--ICONS OF VARIOUS LINKS-->
+
+    <div style="margin-left:430px" width=25 height=25 >
+          <a href=http://www.rssfeed.com><img style="margin-left:20px"src="../static/images/contact_5.jpg" height=25px width=25px></a>
+         <a href=http://www.gmail.com> <img style="margin-left:20px"src="../static/images/contact_3.jpg"  height=25px width=25px> </a>
+         <a href=http://www.twitter.com><img style="margin-left:20px" src="../static/images/contact_2.jpg"  height=25px width=25px> </a>
+         <a href=http://www.linkedin.com> <img style="margin-left:20px"src="../static/images/contact_1.jpg" height=25px width=25px> </a>
+          <a href=http://www.facebook.com> <img style="margin-left:20px"src="../static/images/contact_4.jpg" height=25px width=25px> </a>
+      </div>
+     </body>
+</html>
+
+

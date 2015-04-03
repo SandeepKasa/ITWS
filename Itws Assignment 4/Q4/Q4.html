@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			cnt=1;
+		    $(document).ready(function(){
+		    	$(".slider #1").fadeIn(500);
+		    		if (cnt==1)
+		    		{
+		    			$("#prev").hide();
+		    		}
+		    		else
+		    		{
+		    			$("#prev").show();
+		    		}
+		    		if (cnt==4)
+		    		{
+		    			$("#next").hide();
+		    		}
+		    		else
+		    		{
+		    			$("#next").show();
+		    		}
+
+		    		$("#next").click(function(){
+		    			$(".slider #"+cnt).fadeOut(500);
+		    			cnt=cnt+1;
+		    			$(".slider #"+cnt).fadeIn(500);
+
+		    			if (cnt==1)
+		    			{
+		    				$("#prev").hide();
+		    			}
+		    			else
+		    			{
+		    				$("#prev").show();
+		    			}
+		    			if(cnt==4)
+               			{
+                  			$("#next").hide();
+                		}
+                 		else
+                		{
+                  			$("#next").show();
+                		}
+		    		});
+		    		$("#prev").click(function(){ 
+                        
+                            $(".slider #"+cnt).fadeOut(500); 
+                            cnt=cnt-1;
+                            $(".slider #"+cnt).fadeIn(500); 
+                        
+                if(cnt==1)
+                {
+                  $("#prev").hide();
+                }
+                else
+                {
+                  $("#prev").show();
+                }
+
+                if(cnt==4)
+                {
+                  $("#next").hide();
+                }
+                 else
+                {
+                  $("#next").show();
+                }
+
+                          });
+
+		    	});
+		</script>
+
+		<style>
+			.slider
+			{
+				width:600px;
+				height:400px;
+				margin:30px auto;
+				overflow:hidden;
+			}
+			.slider > img
+			{
+				float:left;
+			}
+			#prev
+			{
+				position:relative;
+				margin-left:30%;
+				text-decoration:none;
+
+			}
+			#next
+			{
+				position:relative;
+				margin-left:457px;
+				text-decoration:none;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="slider">
+			<img id="1" src="image1.jpg">
+			<img id="2" src="image2.jpg">
+			<img id="3" src="image3.jpg">
+			<img id="4" src="image4.jpg">
+			<img id="5" src="image5.jpg">
+		</div>
+		<button id="next" onclick="next()">next</button>
+<button id="prev" onclick="previous()">previous</button>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+
+</head>
+<style>
+#cont
+{
+display: inline-block;
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 500px;
+height: 200px;
+margin: auto;
+	background-color: #f3f3f3;
+}
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+		$("#h").click(function(){
+			setTimeout(function() {
+			var x=$("#height").val();
+			$("#cont").css({"height":x});
+			},1000);
+			});
+		});
+$(document).ready(function(){
+		$("#w").click(function(){
+			setTimeout(function() {
+			var y=$("#width").val();
+			$("#cont").css({"width":y});
+			} ,1000);
+			});
+		});
+$(document).ready(function(){
+		$("#b").click(function(){
+			setTimeout(function() {
+			var z=$("#background").val();
+			$("#cont").css({"backgroundColor":z});
+			}, 1000);
+			});
+		});
+
+</script>
+
+
+</head>
+
+
+<body>
+
+<table>
+<tr>
+<td><button id="h">height</button></td>
+<td><input id="height"/></td>
+</tr>
+<tr>
+<td><button id="w">width</button></td>
+<td><input id="width"/></td>
+</tr>
+<tr>
+<td><button id="b">background-color</button></td>
+<td><input id="background"/></td>
+</tr>
+</table>
+<div id="cont"> Animating Box: Have a div with some text in it, and the following buttons above it. One button to adjust the width; one, the height; and one, the background colour. The key is not to have the changes happen immediately, but over the course of a second.</div> 
+
+</body>
+
+
+</html>
